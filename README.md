@@ -4,7 +4,7 @@ An interactive Python/Pygame Newtonian gravity simulation of an idealized Earthâ
 
 ![Interactive Earthâ€“Moon simulation](assets/simulation_preview.webp)
 
-## Current scope
+## Features
 
 Implemented:
 
