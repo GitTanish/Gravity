@@ -81,6 +81,10 @@ Visual settings live in `config/constants.py`:
 
 The current potential scale and softening place Earth's initial marker at approximately `y = -18.62`, visible with the default camera. These two settings affect visualization only, not orbital forces. Excessively deep funnels can move markers off-screen or behind the camera's near plane. Try `R` to restore the view or `G` to inspect the flat orbits.
 
+## Physics notes
+
+The handwritten derivation behind the model is in [docs/derivations.pdf](docs/derivations.pdf).
+
 ## Run the tests
 
 With the virtual environment active, run from the project root:
@@ -143,9 +147,12 @@ print("Relative energy error:", abs(final_energy - initial_energy) / abs(initial
 ```text
 Gravity/
 ├── assets/
+│   ├── img.jpeg               # Static simulation screenshot
 │   └── simulation_preview.webp # Recording of the interactive view
 ├── config/
 │   └── constants.py          # Physical, display, and time-warp settings
+├── docs/
+│   └── derivations.pdf       # Handwritten physics derivation notes
 ├── simulation/
 │   ├── body.py               # Body state and trail storage
 │   └── orbital_setup.py      # Earth–Moon circular-orbit initialization
